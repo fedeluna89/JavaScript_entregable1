@@ -1,0 +1,157 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+body {
+    font-family: 'Smooch Sans', sans-serif;
+    background-color: rgb(11, 155, 23);
+}
+.titulo{
+    color: rgba(142, 189, 166, 0.623);
+}
+
+header div h2 {
+    background-color: rgb(6, 105, 14);
+}
+
+header nav {
+    width: 100%;
+    background-color:rgb(5, 77, 11);
+    height: 30px;
+    padding-top: 10px;
+}
+header nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+header nav ul li {
+    font-size: 15px;
+    list-style: none;
+}
+.menu {
+    font-weight: bold;
+    text-decoration: none;
+    color: rgba(142, 189, 166, 0.623);
+    padding: 4px;
+    border-radius: 3px;
+}
+.menu:hover {
+    background-color: rgb(12, 139, 23);
+}
+#grilla {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-areas:"ligas-principales"
+                        "efa"
+                        "iesa"
+                        "vpg"
+                        "nosotros"
+                        "footer";
+}
+.ligas-principales {
+    grid-area: ligas-principales;
+    text-align: center;
+    background-color:rgb(5, 77, 11);
+    color: rgba(142, 189, 166, 0.623);
+}
+.foto-portada {
+    width: 100%;
+}
+.efa {
+    margin-top: 10px;
+    grid-area: efa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: radial-gradient(rgba(133, 133, 133, 0.5), rgba(133, 133, 133, 0.5)),url(../assest/fumigacion1.jpg);
+    background-size:cover;
+}
+.iesa {
+    grid-area: iesa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image:radial-gradient(rgba(133, 133, 133, 0.5), rgba(133, 133, 133, 0.5)), url(../assest/fumigacion.jpg);
+    background-size: cover;
+
+}
+.vpg {
+    grid-area: vpg;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: radial-gradient(rgba(133, 133, 133, 0.5), rgba(133, 133, 133, 0.5)),url(../assest/fumigacion1.jpg);
+}
+.nosotros {
+    grid-area: nosotros;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(5, 77, 11);
+}
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(5, 77, 11);
+}
+.imagenes {
+    width: 100px;
+    border-radius: 100%;
+    padding: 15px;
+}
+.parrafo {
+    text-align: center;
+    padding: 20px;
+}
+.redes {
+    width: 30px;
+    padding: 20px;
+}
+
+@media only screen and (min-width:1024px) {
+    #grilla {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:"ligas-principales ligas-principales ligas-principales"
+                            "efa iesa vpg"
+                            "plagas ambientes bacterias"
+                            "nosotros nosotros nosotros"
+                            "footer footer footer";
+    }
+    header div h2 {
+        font-size: 60px;
+    }
+    header nav {
+        padding-bottom: 15px;
+    }
+    header nav ul li {
+        font-size: 30px;
+    }
+    .ligas-principales {
+        font-size: 45px;
+        padding-bottom: 15px;
+    }
+    .efa {
+        margin-top: 0%;
+    }
+    .parrafo {
+        font-size: 40px;
+
+    }
+    .imagenes{ 
+        width: 150px;
+        padding-bottom: 20px;
+    }
+    .nosotros {
+        background-color: rgb(5, 77, 11);
+    }
+    .redes {
+        width: 45px;
+        background-color: rgb(5, 77, 11);
+    }
+}

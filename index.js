@@ -1,25 +1,19 @@
-function PedirDatos(nombre, apellido, edad) {
-    let nombre = prompt("igresa tu nombre");
-    let apellido = prompt("ingresa tu apellido");
-    let edad = parseInt(prompt("ingresa tu edad"));
-
-    alert = (`${nombre} ${apellido}, Tu edad es ${edad} `)
+function PedirDatos(nombre, apellido) {
+    console.log(`hola como estas ${nombre} ${apellido}`);
 }
 
-PedirDatos(nombre);
-PedirDatos(apellido);
-PedirDatos(edad);
+PedirDatos("micaela", "castro");
+
+let edad = parseInt(prompt("ingresa tu edad"));
 
 if(edad > 17){
-    alert(datos);
-}
+    alert(`Bienvenida micaela castro`);
+} 
 
 while(edad < 17){
-alert("Edad Insuficiente")
+alert(`Edad Insuficiente`)
 edad = prompt("Volve a ingresar tu edad");
 }
 
-nombre = "fede";
-apellido = "luna";
-edad = 33;
+
 
